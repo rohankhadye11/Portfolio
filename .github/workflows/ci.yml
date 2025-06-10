@@ -1,0 +1,14 @@
+name: Demo CI
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  success-message:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Success message
+        run: echo "File Pushed Successfully!"
